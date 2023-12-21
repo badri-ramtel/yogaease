@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YogEase - an online yoga booking</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+{% block content %}
+    <!-- top banner-->
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text"> Stretch your body, expand your mind</div>
+        </div>
+    </div>
+
+    <!-- nav bar-->
+    <nav>
+        <div class="container main-nav flex">
+            <a href="{% url 'myapp-home' %}" class="company-logo">
+                <img src="/static/Images/final-logo.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li><a href="{% url 'myapp-about' %}" class="hover-links">About Us</a></li>
+                    <li><a href="{% url 'myapp-course' %}" class="hover-links">Courses</a></li>
+                    <li><a href="#" class="hover-links">Pricing</a></li>
+                    <li><a href="#" class="hover-links">Resources</a></li>
+                    <li><a href="{% url 'authapp-login' %}" class="hover-links secondary-button">Log-In</a></li>
+                    <li><a href="{% url 'authapp-signup' %}" class="hover-links primary-button">Sign-Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--header section-->
+    <header>
+        <div class="container header-section flex">
+            <div class="header-left">
+                <h1>Book Yoga Classes Online</h1>
+                <p>Discover the convenience of booking yoga classes online and enjoy a seamless experience from the comfort of your home.</p>
+                 <a href="#" class="primary-button get-started-btn">Get Started</a>    
+            </div>
+
+            <div class="header-right">
+                <img src="/static/Images/fornt-image.png" alt="Hero image">
+            </div>
+        </div>
+    </header>
+    
+    <!-- companies section -->
+    <section class="companies-section">
+        <div class="container">
+            <div class="small-bold-text companies-header">The most popular institutions associated with us</div>
+            <div class="logos flex">
+                <img class="logo" src="/static/Images/logo-Yoga-Home.png" alt="">
+                <img class="logo" src="/static/Images/logo-ayurveda-home.jpg" alt="">
+                <img class="logo" src="/static/Images/logo.png" alt="">
+                <img class="logo" src="/static/Images/Nepal-Yoga-Institute-Logo.png" alt="">
+                <img class="logo" src="/static/Images/Salamba-yoga-logo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="search-bar">
+                <form action="" class="search">
+                    <input type="text" placeholder="Search Yoga Classes" name="q">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <h2>Popular Courses</h2>
+            <div class="features-area flex">
+                <div class="features-card flex">
+                    <img src="/static/Images/feature1.png" alt="">
+                    <h3>Pilates Yoga</h3>
+                    <p>Discover how people group and label information.</p>
+                    <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+
+                <div class="features-card flex">
+                    <img src="/static/Images/asset 12.svg" alt="">
+                    <h3>Ashtanga Yoga</h3>
+                    <p>Discover how people group and label information.</p>
+                    <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+
+                <div class="features-card flex">
+                    <img src="/static/Images/asset 17.svg" alt="">
+                    <h3>Gentle Yoga</h3>
+                    <p>Discover how people group and label information.</p>
+                    <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+
+                <div class="features-card flex">
+                    <img src="/static/Images/asset 14.svg" alt="">
+                    <h3>Vinyasa Class</h3>
+                    <p>Discover how people group and label information.</p>
+                    <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+
+                <div class="features-card flex">
+                    <img src="/static/Images/asset 15.svg" alt="">
+                    <h3>Hatha Yoga</h3>
+                    <p>Discover how people group and label information.</p>
+                    <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+
+                <div class="features-card flex">
+                    <img src="/static/Images/asset 16.svg" alt="">
+                    <h3>Kundalini Yoga</h3>
+                    <p>Discover how people group and label information.</p>
+                    <a href="#" class="secondary-button">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="big-feature-section">
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="/static/Images/feature1.png" alt="">
+            </div>
+            <div class="feature-desc flex">
+                <h2>Sukhasana </h2>
+                <h3>Easy Pose Asana</h3>
+                <p>It gets its name from the Sanskrit words, Sukha, meaning easy, and asana, meaning posture.</p>
+            </div> 
+        </div>
+    </section>
+
+    <section class="big-feature-section">
+        <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+            <div class="feature-img">
+                <img src="/static/Images/feature2.png" alt="">
+            </div>
+            <div class="feature-desc flex">
+                <h2>International Yoga Day </h2>
+                <h3>June 21</h3>
+                <p>The International Day of Yoga has been celebrated across the world annually on June 21 since 2015</p>
+            </div> 
+        </div>
+    </section>
+
+    <section class="big-feature-section">
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="/static/Images/pregant.jpg" alt="">
+            </div>
+            <div class="feature-desc flex">
+                <h2>Pregnancy Yoga </h2>
+                <h3>Prenatal Yoga, Hatha Yoga and Restorative Yoga</h3>
+                <p>Practicing yoga during pregancy creates a balance between emotional,physical and spiritual dimensions and to prepare for childbirth.</p>
+            </div> 
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container flex cta-section-container">
+            <h2>Start your Yoga Today</h2>
+            <p>Make your decision right now</p>
+            <a href="#" class="primary-button">Get Started</a>
+
+        </div>
+    </section>
+
+    <footer></footer>
+    <div class="subfooter">
+        <div class="container flex subfooter-container">
+            <a class="hover-links" href="#">All Rights Reserved</a>
+            <a class="hover-links" href="#">6th Sem Project</a>
+
+            <a class="" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="" href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/becd77658e.js" crossorigin="anonymous"></script>
+{% endblock content %}
+</body>
+</html>
