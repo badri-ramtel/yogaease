@@ -8,3 +8,6 @@ def courses(request):
 
 def about_us(request):
     return render(request, 'myapp/about.html')
+
+def prices(request):
+    return render(request, 'myapp/pricing.html')
