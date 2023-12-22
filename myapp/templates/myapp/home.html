@@ -1,24 +1,17 @@
-<!DOCTYPE html>
+{% extends 'core/base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YogEase - an online yoga booking</title>
-    <link rel="stylesheet" href="/static/main.css">
-</head>
+{% block title %} YogaEase - an online yoga booking {% endblock title%}
 
-<body>
 {% block content %}
     <!-- top banner-->
-    <div class="top-banner">
+    <!-- <div class="top-banner">
         <div class="container">
             <div class="small-bold-text banner-text"> Stretch your body, expand your mind</div>
         </div>
-    </div>
+    </div> -->
 
     <!-- nav bar-->
-    <nav>
+    <!-- <nav>
         <div class="container main-nav flex">
             <a href="{% url 'myapp-home' %}" class="company-logo">
                 <img src="/static/Images/final-logo.png" alt="company logo">
@@ -34,7 +27,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!--header section-->
     <header>
@@ -179,7 +172,4 @@
             <a class="" href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/becd77658e.js" crossorigin="anonymous"></script>
 {% endblock content %}
-</body>
-</html>
