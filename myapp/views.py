@@ -11,3 +11,6 @@ def about_us(request):
 
 def prices(request):
     return render(request, 'myapp/pricing.html')
+
+def resources(request):
+    return render(request, 'myapp/resources.html')
